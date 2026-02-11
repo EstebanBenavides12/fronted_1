@@ -2,7 +2,8 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class AuthService {
-  static const String baseUrl = 'http://TU_IP:3000'; // backend
+  static const String baseUrl = 'http://localhost:3000';
+
 
   static Future<Map<String, dynamic>> login(
       String documento, String password) async {
